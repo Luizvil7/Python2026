@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(155, 121, 177);
+}
+
+section {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+#corpo_curriculo>div {
+    margin-bottom: 30px;
+}
+
+#barra {
+    margin: 20px 0;
+    width: 99%;
+    border-top: 1px solid #222222;
+}
