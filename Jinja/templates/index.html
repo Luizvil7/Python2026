@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Atv Jinja{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<header>
+    <h1>Atividade Jinja</h1>
+</header>
+
+<body>
+    {% block content %}
+    <div id="div_questao">
+        <p> Olá, {{dados_luiz.nome}}! </p>
+    </div>
+    <div id="div_questao">
+        {{dados_luiz.nome}}, {{dados_luiz.idade}} anos. <br>
+    </div>
+    <div id="div_questao">
+        Nome: {{dados.nome}} <br>
+        Email: {{dados.email}}
+    </div>
+    <div id="div_questao">
+        Lista de alunos: {% for item in lista_alunos %} <li>{{item}}</li> {% endfor %}<br>
+    </div>
+    <div id="div_questao">
+        </p>
+        {% if nota >= 7 %}
+        <p> Aprovado</p>
+        {% else %}
+        <p>Reprovado</p>
+        {% endif %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
