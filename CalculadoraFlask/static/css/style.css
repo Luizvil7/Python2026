@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --verde1: #6a994b;
+    --verde2: #e2e783;
+}
+
+body {
+    background-image: url('/static/images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    margin: 20px 0 40px;
+    color: var(--verde1);
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+
+#calculator {
+    border-radius: 10px;
+    text-align: left;
+    outline: 1px solid #6a994b;
+    background-color: var(--verde2);
+    padding: 20px;
+    box-shadow: 0 0 20px #6a994b;
+    width: 320px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+
+.form-grupo {
+    margin-bottom: 12px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+
+input[type="number"],
+
+select {
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: var(--verde1);
+    border: none;
+    box-shadow: 0 0 10px var(--verde2);
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+
+button {
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    background-color: var(--verde1);
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px var(--verde2);
+    margin-top: 8px;
+    transition: .4s;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select:hover, button:hover, input:hover {
+    background-color: var(--verde2);
+    box-shadow: 0 0 10px var(--verde1);
+}
+
+button:hover {
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+select:focus {
+    outline: none;
+    border: none;
+}
+
+
+
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 12px;
+    background: var(--verde1);
+    box-shadow: 0 0 10px var(--verde1);
+    border-radius: 10px;
+    text-align: right;
+    font-size: 18px;
+}
+
+
+.resultado strong {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+
+a {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #222222;
+}
